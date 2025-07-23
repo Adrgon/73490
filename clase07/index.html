@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="carousel-container">
+         <div class="carousel-images">
+             <img src="https://alfabetajuega.com/hero/2021/02/dragon-ball-z-2.jpg?width=1200" alt="Imagen 1 del carrusel"
+                class="carousel-img active">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRti9jbi1cKx1xSBjG4G2IvsaeaDrrrjcSZVw&s"
+                alt="Imagen 2 del carrusel" class="carousel-img">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/dragon-ball-mejores-momentos-top-gohan-ss2-celula-1542036103.jpg?crop=1xw:1xh;center,top&resize=1200:*"
+                alt="Imagen 3 del carrusel" class="carousel-img">
+            <img src="https://i.blogs.es/9c29aa/y1dqtfljan8mhdqx9pmufyto78j/500_333.jpeg" alt="Imagen 4 del carrusel"
+                class="carousel-img">            
+        </div>
+        <button id="prevBtn" class="carousel-btn">Anterior</button>
+        <button id="nextBtn" class="carousel-btn">Siguiente</button>
+    </div>
+
+    <hr>
+
+    <div class="form-section">
+        <h2>Configurar Carrusel</h2>
+        <form id="carouselConfigForm">
+            <label for="imageUrl">URL de Nueva Imagen:</label>
+            <input type="text" id="imageUrl" name="imageUrl"
+                placeholder="Ej: https://via.placeholder.com/600x400?text=NuevaImagen">
+            <button type="submit">Agregar Imagen</button>
+            <br><br>
+            <label for="imageIndexToRemove">Índice de Imagen a Eliminar:</label>
+            <input type="number" id="imageIndexToRemove" name="imageIndexToRemove" min="0" value="0">
+            <button type="button" id="removeImageBtn">Eliminar Imagen</button>
+        </form>
+    </div>
+    
+</body>
+
+</html>
