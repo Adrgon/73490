@@ -1,0 +1,71 @@
+/* Estilos por defecto (Modo Claro) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa; /* Fondo claro */
+    color: #212529; /* Texto oscuro */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.caja-contenido {
+    background-color: #e9ecef; /* Fondo de caja claro */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+    background-color: #6c757d; /* Gris para el botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a6268;
+}
+
+/* Estilos para el Modo Oscuro (se añaden a la clase 'dark-mode' en el body) */
+body.dark-mode {
+    background-color: #343a40; /* Fondo oscuro */
+    color: #e2e6ea; /* Texto claro */
+}
+
+body.dark-mode h1,
+body.dark-mode h2 {
+    color: #66b3ff; /* Un azul más claro para los títulos */
+}
+
+body.dark-mode .caja-contenido {
+    background-color: #495057; /* Fondo de caja oscuro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode button {
+    background-color: #0056b3; /* Un azul más oscuro para el botón en dark mode */
+}

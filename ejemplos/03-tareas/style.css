@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    color: #4CAF50; /* Un verde amigable */
+}
+
+.input-contenedor {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#nuevaTareaInput {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#listaTareas {
+    list-style: none; /* Quitamos los puntos de la lista */
+    padding: 0;
+    width: 450px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#listaTareas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+#listaTareas li:last-child {
+    border-bottom: none;
+}
+
+#listaTareas li button.eliminar {
+    background-color: #f44336; /* Rojo para eliminar */
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
+#listaTareas li button.eliminar:hover {
+    background-color: #da190b;
+}

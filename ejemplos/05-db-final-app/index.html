@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aincronia</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="main.js" defer ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <h1>Simulador de Peleas Dragon Ball</h1>
+    <div id="seleccion-personaje">
+        <label for="personaje">Elige tu personaje:</label>
+        <select id="personaje"></select>
+        <button id="iniciar">Iniciar pelea</button>
+    </div>
+    <div id="batalla" style="display:none;">
+        <h2 id="vs"></h2>
+        <div id="log"></div>
+        <button id="reiniciar">Reiniciar</button>
+    </div>
+    <div id="historial">
+        <h2>Historial de peleas</h2>
+        <ul id="lista-historial"></ul>
+    </div>
+
+</body>
+</html>

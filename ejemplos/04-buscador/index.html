@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Autos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+</head>
+
+<body>
+    <h1>Buscador de Autos</h1>
+
+    <div class="filtros">
+        <div class="filtro-grupo">
+            <label for="marca">Marca:</label>
+            <select id="marca">
+                <option value="">Selecciona una marca</option>
+            </select>
+        </div>
+
+        <div class="filtro-grupo">
+            <label for="year">Año:</label>
+            <select id="year">
+                <option value="">Selecciona un año</option>
+            </select>
+        </div>
+
+        <div class="filtro-grupo">
+            <label for="precioMin">Precio Mínimo:</label>
+            <input type="number" id="precioMin" placeholder="Ej: 20000">
+        </div>
+
+        <div class="filtro-grupo">
+            <label for="precioMax">Precio Máximo:</label>
+            <input type="number" id="precioMax" placeholder="Ej: 50000">
+        </div>
+
+        <button id="btnLimpiar">Limpiar Filtros</button>
+    </div>
+
+    <div id="resultado" class="resultado-autos">
+        <p>Cargando autos...</p>
+    </div>
+</body>
+
+</html>
