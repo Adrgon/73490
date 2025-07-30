@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - Scroll Infinito</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+</head>
+<body>
+    <header>
+        <h1>🔥 Pokédex Interactiva</h1>
+        <p>Descubre todos los Pokémon con scroll infinito</p>
+    </header>
+
+    <main>
+        <!-- Barra de búsqueda -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar Pokémon..." />
+            <button id="searchBtn">🔍</button>
+        </div>
+
+        <!-- Filtros -->
+        <div class="filters">
+            <select id="typeFilter">
+                <option value="">Todos los tipos</option>
+            </select>
+            <button id="resetBtn">Resetear</button>
+        </div>
+
+        <!-- Contenedor de Pokémon -->
+        <div id="pokemonContainer" class="pokemon-grid">
+            <!-- Los Pokémon se cargarán aquí dinámicamente -->
+        </div>
+
+        <!-- Indicador de carga -->
+        <div id="loadingIndicator" class="loading">
+            <div class="pokeball-loader">
+                <div class="pokeball">
+                    <div class="pokeball-top"></div>
+                    <div class="pokeball-center"></div>
+                    <div class="pokeball-bottom"></div>
+                </div>
+            </div>
+            <p>Cargando más Pokémon...</p>
+        </div>
+
+        <!-- Modal para detalles del Pokémon -->
+        <div id="pokemonModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modalContent">
+                    <!-- Contenido del modal se carga dinámicamente -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Datos obtenidos de <a href="https://pokeapi.co/" target="_blank">PokéAPI</a></p>
+    </footer>
+</body>
+</html>

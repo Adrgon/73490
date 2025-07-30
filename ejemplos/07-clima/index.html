@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌤️ Clima App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️ Clima App</h1>
+            <p>Consulta el clima actual de cualquier ciudad</p>
+        </header>
+
+        <main>
+            <!-- Formulario de búsqueda -->
+            <div class="search-section">
+                <form id="weatherForm">
+                    <div class="input-group">
+                        <input 
+                            type="text" 
+                            id="cityInput" 
+                            placeholder="Ej: Madrid, Barcelona, Londres..." 
+                            required
+                        >
+                        <button type="submit" id="searchBtn">
+                            🔍 Buscar
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Indicador de carga -->
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Consultando el clima...</p>
+            </div>
+
+            <!-- Resultado del clima -->
+            <div id="weatherResult" class="weather-card hidden">
+                <div class="weather-header">
+                    <h2 id="cityName"></h2>
+                    <span id="countryFlag"></span>
+                </div>
+                
+                <div class="weather-main">
+                    <div class="temperature-section">
+                        <div class="temp-display">
+                            <span id="temperature"></span>
+                            <span class="temp-unit">°C</span>
+                        </div>
+                        <div class="feels-like">
+                            Sensación térmica: <span id="feelsLike"></span>°C
+                        </div>
+                    </div>
+                    
+                    <div class="weather-icon-section">
+                        <img id="weatherIcon" alt="Icono del clima">
+                        <p id="weatherDescription"></p>
+                    </div>
+                </div>
+
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <span class="detail-label">💧 Humedad</span>
+                        <span id="humidity"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">🌪️ Viento</span>
+                        <span id="windSpeed"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">📊 Presión</span>
+                        <span id="pressure"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">👁️ Visibilidad</span>
+                        <span id="visibility"></span>
+                    </div>
+                </div>
+
+                <div class="weather-extras">
+                    <div class="sun-times">
+                        <div class="sun-item">
+                            <span>🌅 Amanecer: <span id="sunrise"></span></span>
+                        </div>
+                        <div class="sun-item">
+                            <span>🌇 Atardecer: <span id="sunset"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mensaje de error -->
+            <div id="errorMessage" class="error-message hidden">
+                <h3>⚠️ Error</h3>
+                <p id="errorText"></p>
+                <button id="retryBtn" class="retry-btn">Intentar de nuevo</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Datos del clima proporcionados por <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+        </footer>
+    </div>
+
+
+</body>
+</html>

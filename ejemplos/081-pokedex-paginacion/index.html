@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - Scroll Infinito</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+</head>
+<body>
+    <header>
+        <h1>🔥 Pokédex Interactiva</h1>
+        <p>Descubre todos los Pokémon con scroll infinito</p>
+    </header>
+
+    <main>
+        <!-- Contenedor de Pokémon -->
+        <div id="pokemonContainer" class="pokemon-grid">
+            <!-- Los Pokémon se cargarán aquí dinámicamente -->
+        </div>
+
+        <!-- Indicador de carga -->
+        <div id="loadingIndicator" class="loading">
+            <div class="pokeball-loader">
+                <div class="pokeball">
+                    <div class="pokeball-top"></div>
+                    <div class="pokeball-center"></div>
+                    <div class="pokeball-bottom"></div>
+                </div>
+            </div>
+            <p>Cargando Pokémon...</p>
+        </div>
+
+        <!-- Controles de paginación -->
+        <div id="paginationControls" class="pagination">
+            <button id="prevBtn" class="pagination-btn">« Anterior</button>
+            <div class="pagination-info">
+                <span id="pageInfo">Página 1</span>
+                <span id="totalInfo"> de 51</span>
+            </div>
+            <button id="nextBtn" class="pagination-btn">Siguiente »</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Datos obtenidos de <a href="https://pokeapi.co/" target="_blank">PokéAPI</a></p>
+    </footer>
+</body>
+</html>
