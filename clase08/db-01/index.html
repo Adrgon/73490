@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>🐉 Dragon Ball - Datos Locales</h1>
+        <p>Personajes cargados desde archivo JSON local</p>
+    </header>
+
+    <div class="error-message" id="error-message" style="display: none;">
+        <h3>❌ Error al cargar los datos</h3>
+        <p id="error-text"></p>
+        <button onclick="loadCharacters()">Reintentar</button>
+    </div>
+
+    <div class="characters-container" id="characters-container">
+        <!-- Los personajes se cargarán aquí dinámicamente -->
+
+    </div>
+</div>
+</body>
+</html>

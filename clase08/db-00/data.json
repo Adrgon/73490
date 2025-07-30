@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Goku",
+      "race": "Saiyan",
+      "gender": "Male",
+      "image": "https://dragonball-api.com/characters/goku_normal.webp"
+    },
+    {
+      "id": 2,
+      "name": "Vegeta",
+      "race": "Saiyan",
+      "gender": "Male",
+      "image": "https://dragonball-api.com/characters/vegeta_normal.webp"
+    },
+    {
+      "id": 3,
+      "name": "Piccolo",
+      "race": "Namekian",
+      "gender": "Male",
+      "image": "https://dragonball-api.com/characters/picolo_normal.webp"
+    },
+    {
+      "id": 4,
+      "name": "Bulma",
+      "race": "Human",
+      "gender": "Female",
+      "image": "https://dragonball-api.com/characters/bulma.webp"
+    },
+    {
+      "id": 5,
+      "name": "Freezer",
+      "race": "Frieza Race",
+      "gender": "Male",
+      "image": "https://dragonball-api.com/characters/Freezer.webp"
+    },
+    {
+      "id": 6,
+      "name": "Zarbon",
+      "race": "Frieza Race",
+      "gender": "Male",
+      "image": "https://dragonball-api.com/characters/zarbon.webp"
+    },
+    {
+      "id": 7,
+      "name": "Dodoria",
+      "race": "Frieza Race",
+      "gender": "Male",
+      "image": "https://dragonball-api.com/characters/dodoria.webp"
+    },
+    {
+      "id": 8,
+      "name": "Ginyu",
+      "race": "Frieza Race",
+      "gender": "Male",
+      "image": "https://dragonball-api.com/characters/ginyu.webp"
+    },
+    {
+      "id": 9,
+      "name": "Celula",
+      "race": "Android",
+      "gender": "Male",
+      "image": "https://dragonball-api.com/characters/celula.webp"
+    },
+    {
+      "id": 10,
+      "name": "Gohan",
+      "race": "Saiyan",
+      "gender": "Male",
+      "image": "https://dragonball-api.com/characters/gohan.webp"
+    }
+  ]
+}

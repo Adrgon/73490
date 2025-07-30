@@ -1,0 +1,59 @@
+Progracion sincronica
+
+Paso1
+Paso2
+Paso3
+...
+...
+...
+
+function uno (){
+    dos()
+    function dos(){
+        tres()
+        function tres(){}
+    }
+}
+
+uno()
+
+Programacion asincronica
+-----------  -----------
+
+console.log("entrar")
+setTimeOut(()=>{
+    console.log("En el timer")
+},1000)
+console.log("fin")
+---------------
+entrar
+fin 
+En el timer
+---------------
+
+
+console.log("entrar")
+setTimeOut(()=>{
+    console.log("En el timer")
+},5)
+console.log("fin")
+---------------
+entrar
+ 
+En el timer
+
+fin
+---------------
+
+
+
+
+Timers // controles de tiempo
+Funcionamiento avanzado de javascript
+        --> Programcion en un hilo
+        --> CallStack
+        --> EventLoop
+        --> CallbackQue
+
+Promesa --> Construccion de promesas
+        --> Promesas en propio lenguaje (fetch)

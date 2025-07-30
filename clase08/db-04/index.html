@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Personajes Dragon Ball</title>
+    <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🐉 Buscador Dragon Ball</h1>
+            <p>Busca personajes por nombre</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Escribe el nombre del personaje..." maxlength="50">
+            <button id="search-button" onclick="searchCharacters()">Buscar</button>
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Buscando personajes...</p>
+        </div>
+
+        <div class="error-message" id="error-message" style="display: none;">
+            <h3>❌ Error en la búsqueda</h3>
+            <p id="error-text"></p>
+        </div>
+
+        <div class="no-results" id="no-results" style="display: none;">
+            <h3>🔍 No se encontraron resultados</h3>
+            <p>Intenta con otro nombre de personaje</p>
+        </div>
+
+        <div class="characters-container" id="characters-container" style="display: none;">
+            <!-- Los resultados se cargarán aquí -->
+        </div>
+    </div>
+</body>
+
+</html>
