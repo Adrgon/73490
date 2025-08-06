@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Teclado Mecánico",
+    "price": 75.0,
+    "image": "https://placehold.co/600x400/png"
+  },
+  {
+    "id": 2,
+    "name": "Mouse Gamer",
+    "price": 30.0,
+    "image": "https://placehold.co/600x400/png"
+  },
+  {
+    "id": 3,
+    "name": "Monitor Curvo 27'",
+    "price": 250.0,
+    "image": "https://placehold.co/600x400/png"
+  },
+  {
+    "id": 4,
+    "name": "Auriculares RGB",
+    "price": 50.0,
+    "image": "https://placehold.co/600x400/png"
+  },
+  {
+    "id": 5,
+    "name": "Webcam HD",
+    "price": 40.0,
+    "image": "https://placehold.co/600x400/png"
+  }
+]
